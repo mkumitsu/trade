@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'ThinkHigher';
+    src: url('ThinkHigher.woff2') format('woff2'),
+        url('ThinkHigher.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+        font-family: Arial, sans-serif;
+    }
+	
+	header h1 {
+    font-family: 'ThinkHigher';
+    font-weight: normal;
+    font-style: normal;
+	font-size: 10em;
+	text-align: center;
+}
+    /* Formatting search box */
+    .search-box{
+        width: 600px;
+        position: relative;
+        display: block;
+        font-size: 24px;
+		margin-top: 200px;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    .search-box input[type="text"]{
+        height: 48px;
+        padding: 5px 10px;
+        border: 1px solid #CCCCCC;
+        font-size: 14px;
+    }
+    .result{
+        position: absolute;        
+        z-index: 999;
+        top: 100%;
+        left: 0;
+    }
+    .search-box input[type="text"], .result{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Formatting result items */
+    .result p{
+        margin: 0;
+        padding: 7px 10px;
+        border: 1px solid #CCCCCC;
+        border-top: none;
+        cursor: pointer;
+    }
+    .result p:hover{
+        background: #f2f2f2;
+    }
